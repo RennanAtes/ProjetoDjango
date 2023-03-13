@@ -1,0 +1,153 @@
+
+body{
+    margin: 0;
+    background-color: #1C1C1C;
+    height: 100%; 
+}
+html{
+    background-color: #1C1C1C;
+    width: 100%;
+}
+.topo{
+    background-color: #1C1C1C ;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.logo{
+    top: 40%;
+    position: relative;
+}
+.buttons{
+    display: flex;
+    float: right;
+    top: 40%;
+    position: relative;
+
+}
+.button-1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    position: flex;
+    right: 30px;
+    margin-right: 20px;
+}
+.corpo{
+    background-color: #1C1C1C;
+    height: 150px;
+}
+.apresentacao{
+    color: white;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    top: 30px;
+    font-size: 30px;
+    margin: 0;
+}
+.tecnologias{
+    position: relative;
+    background-color: blue;
+
+}
+
+
+.tecnologias{
+    background-color: #1C1C1C;
+    height: 200px;
+}
+.pTecnologias{
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    padding: 2px;
+    margin: 0;
+}
+
+.projetos{
+    position: relative;
+    height: 50px;
+    display: flex;
+    background-color: #1C1C1C;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.listaProjetos{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: #1C1C1C;
+    text-align: center;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 275px;
+    background: #1C1C1C;
+    padding: 15px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textProject{
+    color: white;
+}
+
+.img-container{
+    border-radius: 10%;
+    width: 270px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.white{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+
+
+}
+.secgrupo{
+    background-color: #1C1C1C;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.sectiona{
+    background-color: #1C1C1C;
+    display: flex;
+    position: relative;
+}
+.Sobremim{
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 0;
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+}
+.rosa{
+    color:#f72585
+}
+
+.button-1:hover{
+    background-color:#f72585 ;
+    border: 1px solid #f72585;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}

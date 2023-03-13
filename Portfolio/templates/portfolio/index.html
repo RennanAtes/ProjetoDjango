@@ -1,0 +1,89 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+    <title>Rennan Augusto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <header class='topo'>
+        <div class="container">
+            <img class='logo' src='img'>
+            <div class='buttons'>
+                <a class='button-1 rosa' href='/home/'>Home</a>
+                <a class='button-1 rosa' href='https://www.google.com.br/'>Projetos</a>
+                <a class='button-1 rosa' href='https://www.google.com.br/'>Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class='corpo'>
+        <div class='container'>
+            <div>
+                <h1 class='apresentacao'>Rennan Augusto</h1>
+                <h1 class='apresentacao'>Back End</h1>
+            </div>
+
+        </div>
+
+    </main>
+    <div class='tecnologias'>
+        <div class='container'>
+            <h5 class='pTecnologias'>Python</h5>
+            <h5 class='pTecnologias'>Django</h5>
+            <h5 class='pTecnologias'>SQL (PostgresSQL)</h5>
+            <h5 class='pTecnologias'>GIT/GITHUB</h5>
+            <h5 class='pTecnologias'>HTML</h5>
+            <h5 class='pTecnologias'>CSS</h5>
+        </div>
+    </div>
+
+    <section class='Sobremim'>
+        <div class='container'>
+            <h4 class='rosa'>Sobre mim</h4>
+            <p>Estou em busca da primeira oportunidade no mercado de trabalho, onde eu possa aplicar minhas habilidades e conhecimentos para contribuir com o sucesso, crescimento e desenvolvimento da empresa, enquanto continuo aprimorando minhas habilidades e alcançando metas profissionais e pessoais.  </p>
+        </div>
+    </section>
+    <div class='projetos r'>
+        <h4 class='rosa'>Projetos</h4>
+    </div>
+    <section class='sectiona'>
+        <div class="container">
+            <div class='row'>
+                <div class='card1 col-sm'>
+                    <h4 class='white'>CEP</h4>
+                    <a class='linkProjeto' href='http://127.0.0.1:8000/CEP' target='_blank'>
+                    <img class='img-container' src='{% static 'imagens\portfolio\CEP.png' %}'></a>
+                </div>
+                <div class='card1 col-sm' >
+                    <h4 class='white'>Kindle</h4>
+                    <a class='linkProjeto' href='http://127.0.0.1:8000/sendkindle/' target='_blank'>
+                    <img class='img-container' src='{% static 'imagens\portfolio\uploadKindle.png' %}'></a>
+                </div>
+                <div class='card1 col-sm'>
+                    <h4 class='white'>CEP</h4>
+                    <a class='linkProjeto' href='http://127.0.0.1:8000/CEP' target='_blank'>
+                    <img class='img-container' src='{% static 'imagens\portfolio\CEP.png' %}'></a>
+                </div>
+                <div class='card1 col-sm'>
+                    <h4 class='white'>Kindle</h4>
+                    <a class='linkProjeto' href='http://127.0.0.1:8000/sendkindle/' target='_blank'>
+                    <img class='img-container' src='{% static 'imagens\portfolio\uploadKindle.png' %}'></a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+</html>

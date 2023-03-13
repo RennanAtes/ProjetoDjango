@@ -1,0 +1,25 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+</head>
+<body>
+    <div class="boxlogin">
+        <div class="text">
+            <form>
+                <input title="Login" placeholder="Login" class="campoInput">
+                <br>
+                <br>
+                <input type="password" title="Senha" placeholder="Senha" class="campoInput">
+                <button class="button buttonlogin buttonDecoration">Login</button>
+                <button class="buttonDecoration clickRegister">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <link rel="stylesheet" href="{% static 'CEP/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <header class='topo'>
+        <div class="container">
+            <img class='logo' src='img'>
+            <div class='buttons'>
+                <a class='button-1' href='/home/'>Home</a>
+                <a class='button-1' href='https://www.google.com.br/'>Projetos</a>
+                <a class='button-1' href='https://www.google.com.br/'>Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <div class='page'>
+
+        <div class='fundo'>
+            <form method = 'POST' > {% csrf_token %}
+                <h1 class='titulo'>CEP</h1>
+                <input name='CEP' class='inputCEP' type='text' placeholder='Digite o CEP'>
+                <button type='submit' class='button'>Enviar</button>
+                {% if noCEP %}
+                    <p class='dadosCEP'>Não foi possivel indentificar esse CEP</p>
+                {% endif %}
+                {% if aprovado%}
+                    <p class='dadosCEP'>Rua: {{logradouro}}</p>
+                    <p class='dadosCEP'>Bairro: {{bairro}}</p>
+                    <p class='dadosCEP'>Localidade: {{localidade}}</p>
+                    <p class='dadosCEP'>UF: {{uf}}</p>
+                    <p class='dadosCEP'>ibge: {{ibge}}</p>
+                    <p class='dadosCEP'>ddd: {{ddd}}</p>
+                    <p class='dadosCEP'>siafi: {{siafi}}</p>
+                {% endif %}
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
